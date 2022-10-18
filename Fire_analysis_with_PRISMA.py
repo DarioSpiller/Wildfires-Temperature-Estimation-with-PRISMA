@@ -494,6 +494,9 @@ def main():
     #                     Locating level 2B and level 2D images
     # *************************************************************************** #
     
+    # Here you must set up your folder path with the PRISMA file. You can remove
+    # the num_img variable which was used to name the images as Img1, Img2, etc...
+    # in the original code.
     folder = 'Oregon' + os.path.sep + 'PRISMA' + os.path.sep + num_img
     Level_2D = extract_product_level(folder,'L2D')
     Level_2B = extract_product_level(folder,'L2B')
